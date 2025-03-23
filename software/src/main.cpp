@@ -1,14 +1,5 @@
-/*Initial programme flashed onto the baby rover's ESP32-S3-DevkitC board. This was done via platformio.
-Can do basic movement and connect to your laptop over hotspot for remote control
-TODO: Implement speed control
-TODO: Implement cammast
-*/
-
 #include <Arduino.h>
 #include <WiFi.h>
-
-
-/* --------------MOTOR DRIVER PINS-------------*/
 #define IN1R 2
 #define IN2R 1
 #define IN3R 41
@@ -22,8 +13,8 @@ TODO: Implement cammast
 #define ENAL 15
 #define ENBL 16
 
-const char* ssid = //enter hotspot name here;
-const char* password = //enter wifi pw here;
+const char* ssid = "Rees";
+const char* password = "password42";
 
 
 void MoveRightSide(int speed, bool dir){ //dir True = fwd, false = back
@@ -48,7 +39,7 @@ void MoveLeftSide(int speed, bool dir){
   analogWrite(ENBL, speed);
 }
 
-void MoveFwd(int speed){
+void MoveFwd(int speed){ // side = True, right wheels; dir = True, forwards
   MoveRightSide(speed, true);
   MoveLeftSide(speed, true);
 }
@@ -73,7 +64,7 @@ void Stop(){
   MoveLeftSide(0, true);
 }
 
-int defaultSpeed = 196;
+int defaultSpeed = 255;
 WiFiClient client;
 
 void setup() {
@@ -102,8 +93,8 @@ void setup() {
   }
   Serial.println("\nConnected to network!:");
   Serial.println(WiFi.localIP());
-  //If it doesn't connect to laptop it won't initialise
-  while(!client.connect(IPAddress(192,168,61,151), 10000)){
+
+  while(!client.connect(IPAddress(192,168,17,151), 10000)){
     Serial.println("Connection to host failed");
     delay(1000);
   }
@@ -114,13 +105,11 @@ void loop() {
   if (!client.connected()){
     Stop();
     Serial.println("Reonnecting to server...");
-    while (!client.connect(IPAddress(192, 168, 61, 151), 10000)) {
+    while (!client.connect(IPAddress(192, 168, 17, 151), 10000)) {
       Serial.println("Reconnection failed, retrying...");
       delay(2000);
     }
   }
-  // Reads the command over wifi and does the corresponding movement over if statements
-  // this can also be done over Serial, if you basically change client with Serial
   if (client.available()){
     char command = client.read();
     Serial.print(command);

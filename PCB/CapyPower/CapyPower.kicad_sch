@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "58416126-264e-49d9-9778-654624f47721")
 	(paper "A4")
+	(title_block
+		(title "Capybara Rover Power")
+		(date "2025-04-02")
+		(rev "3.1")
+		(company "Imperial Planetary Robotics Lab")
+	)
 	(lib_symbols
 		(symbol "2.54Jumper:2Pin"
 			(exclude_from_sim no)

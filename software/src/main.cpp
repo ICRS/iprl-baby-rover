@@ -13,8 +13,31 @@
 #define ENAL 15
 #define ENBL 16
 
+WiFiClient client;
+
 const char* ssid = "Rees";
 const char* password = "password42";
+
+const int port = 10000;
+const String IP = "192.168.17.151";
+
+int *ptr = ipSections;
+
+int defaultSpeed = 128;
+
+//TODO: Figure out ip splitting
+
+int* giveIPsubsec(String ip){ //converts IP to corresponding numbers
+  int ipSections[4] = {0, 0, 0, 0};
+  for (int i=0; i<4; i++){
+    int ipSubSec = ip.substr(0, ip.find("."));
+    ipMap.insert({i, stoi(ipSubSec)})
+    ip.erase(0, ip.find(".")+1)
+  }
+  return ipMap
+}
+
+const ipMap = giveIPsubsec(IP);
 
 
 void MoveRightSide(int speed, bool dir){ //dir True = fwd, false = back
@@ -64,8 +87,7 @@ void Stop(){
   MoveLeftSide(0, true);
 }
 
-int defaultSpeed = 255;
-WiFiClient client;
+
 
 void setup() {
   
@@ -94,7 +116,7 @@ void setup() {
   Serial.println("\nConnected to network!:");
   Serial.println(WiFi.localIP());
 
-  while(!client.connect(IPAddress(192,168,17,151), 10000)){
+  while(!client.connect(IPAddress(192,168,17,151), port)){
     Serial.println("Connection to host failed");
     delay(1000);
   }
@@ -105,7 +127,7 @@ void loop() {
   if (!client.connected()){
     Stop();
     Serial.println("Reonnecting to server...");
-    while (!client.connect(IPAddress(192, 168, 17, 151), 10000)) {
+    while (!client.connect(IPAddress(192, 168, 17, 151), port)) {
       Serial.println("Reconnection failed, retrying...");
       delay(2000);
     }

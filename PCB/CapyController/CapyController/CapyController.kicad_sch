@@ -347,6 +347,235 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x05"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x05"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x05_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x08"
 			(pin_names
 				(offset 1.016)
@@ -4802,7 +5031,7 @@
 		(uuid "1742a5bc-2ff1-4164-8436-c207e5d13ebf")
 	)
 	(label "STPR_EN1"
-		(at 196.85 62.23 0)
+		(at 196.85 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4892,7 +5121,7 @@
 		(uuid "314a1b3c-0350-444a-a738-2c88059680ec")
 	)
 	(label "STPR_DIR1"
-		(at 196.85 59.69 0)
+		(at 196.85 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5002,7 +5231,7 @@
 		(uuid "4bc04a32-643b-4aba-9029-0bdc829a9038")
 	)
 	(label "STPR_EN2"
-		(at 219.71 62.23 0)
+		(at 219.71 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5332,7 +5561,7 @@
 		(uuid "a2053a38-942b-4cbe-95a4-c30e835d4d54")
 	)
 	(label "STPR_DIR2"
-		(at 219.71 59.69 0)
+		(at 219.71 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5462,7 +5691,7 @@
 		(uuid "b9dfee87-01e4-4667-b38b-ab041cffd53c")
 	)
 	(label "STPR_PUL1"
-		(at 196.85 57.15 0)
+		(at 196.85 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5612,7 +5841,7 @@
 		(uuid "d263c62a-fed1-4f67-9800-b6d8a1410bf4")
 	)
 	(label "STPR_PUL2"
-		(at 219.71 57.15 0)
+		(at 219.71 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5742,7 +5971,7 @@
 		(uuid "feb1e821-92bd-42bb-89c4-d7dec32e6345")
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
+		(lib_id "Connector_Generic:Conn_01x05")
 		(at 191.77 62.23 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5767,7 +5996,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical"
 			(at 191.77 62.23 0)
 			(effects
 				(font
@@ -5785,7 +6014,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 191.77 62.23 0)
 			(effects
 				(font
@@ -5805,6 +6034,9 @@
 		)
 		(pin "4"
 			(uuid "f6ded52d-6cc2-4fe3-b630-6d1d356f4de3")
+		)
+		(pin "5"
+			(uuid "05aa554f-41e6-47aa-8829-8a5ce6a0fdfe")
 		)
 		(instances
 			(project ""
@@ -6854,7 +7086,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM08B-GHS-TBT_1x08-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B8B-PH-K_1x08_P2.00mm_Vertical"
 			(at 220.98 36.83 0)
 			(effects
 				(font
@@ -7940,7 +8172,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
 			(at 146.05 140.97 0)
 			(effects
 				(font
@@ -8014,7 +8246,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
 			(at 72.39 140.97 0)
 			(effects
 				(font
@@ -8633,7 +8865,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM08B-GHS-TBT_1x08-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B8B-PH-K_1x08_P2.00mm_Vertical"
 			(at 191.77 36.83 0)
 			(effects
 				(font
@@ -9701,7 +9933,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
+		(lib_id "Connector_Generic:Conn_01x05")
 		(at 214.63 62.23 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9726,7 +9958,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical"
 			(at 214.63 62.23 0)
 			(effects
 				(font
@@ -9744,7 +9976,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 214.63 62.23 0)
 			(effects
 				(font
@@ -9764,6 +9996,9 @@
 		)
 		(pin "4"
 			(uuid "cb81d582-67e1-4c27-8455-e99aec0aa76b")
+		)
+		(pin "5"
+			(uuid "7dc010b0-0d6a-4748-9aaf-0ff022975d2f")
 		)
 		(instances
 			(project "CapyController"
@@ -11012,7 +11247,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
 			(at 121.92 140.97 0)
 			(effects
 				(font
@@ -11086,7 +11321,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
 			(at 96.52 172.72 0)
 			(effects
 				(font
@@ -11202,7 +11437,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 196.85 64.77 270)
+		(at 196.85 67.31 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11211,7 +11446,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac0ddf52-7c6f-4f31-86d0-d0eaedfd0add")
 		(property "Reference" "#PWR021"
-			(at 193.04 64.77 0)
+			(at 193.04 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11220,7 +11455,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 200.66 64.7699 90)
+			(at 200.66 67.3099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11229,7 +11464,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 64.77 0)
+			(at 196.85 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11238,7 +11473,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 64.77 0)
+			(at 196.85 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11247,7 +11482,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 196.85 64.77 0)
+			(at 196.85 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12072,6 +12307,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 219.71 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf525de4-5f7a-4cb6-a10e-3f3043fce611")
+		(property "Reference" "#PWR063"
+			(at 226.06 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 223.52 57.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 219.71 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "900cbc73-babf-4a3f-b081-9ad457d20429")
+		)
+		(instances
+			(project "CapyController"
+				(path "/9356d540-b2ec-4e7a-a3e1-4671cf217e36"
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 171.45 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12204,7 +12506,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 219.71 64.77 270)
+		(at 219.71 67.31 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12213,7 +12515,7 @@
 		(fields_autoplaced yes)
 		(uuid "d9129811-283a-491d-b943-037229e23e2e")
 		(property "Reference" "#PWR022"
-			(at 215.9 64.77 0)
+			(at 215.9 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12222,7 +12524,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 223.52 64.7699 90)
+			(at 223.52 67.3099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12231,7 +12533,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 219.71 64.77 0)
+			(at 219.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12240,7 +12542,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 64.77 0)
+			(at 219.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12249,7 +12551,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 219.71 64.77 0)
+			(at 219.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12427,7 +12729,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
 			(at 146.05 173.99 0)
 			(effects
 				(font
@@ -12679,6 +12981,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 196.85 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1e5f2af-dceb-4ea4-a6d9-2ed506a1445e")
+		(property "Reference" "#PWR062"
+			(at 203.2 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 57.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 196.85 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "75a4246f-e7e7-488f-9240-9ba2185f548e")
+		)
+		(instances
+			(project "CapyController"
+				(path "/9356d540-b2ec-4e7a-a3e1-4671cf217e36"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 110.49 162.56 0)
 		(unit 1)
@@ -12838,7 +13207,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
 			(at 120.65 172.72 0)
 			(effects
 				(font
@@ -13045,7 +13414,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
 			(at 72.39 172.72 0)
 			(effects
 				(font
@@ -13390,7 +13759,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
 			(at 96.52 140.97 0)
 			(effects
 				(font

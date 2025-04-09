@@ -1,0 +1,105 @@
+(footprint "ScrewTerminal_P6.00mm_3P"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "J**"
+		(at -1.75 0 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b3720eec-5397-4263-84c6-f273cddfa576")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "ScrewTerminal_P6.00mm_3P"
+		(at 0 8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e5067d42-3bdc-4cb8-bf1c-285c0146a4a7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "53370da2-b004-49f8-bb6c-e1a7c7021796")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db580e44-946d-4d35-ba47-8488ceeee570")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -6 -10)
+		(end 9 10)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "409f3908-4257-4bc0-992f-3007f7e3a14e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 9.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "89baa95f-b7eb-4d96-904a-bf39454b5a5b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 -6)
+		(size 2.4 2.4)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "50b4ccec-cc93-4822-94d1-82d7bf402b6c")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 2.4 2.4)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5ce201b7-f10a-4a68-9d2c-0f8771e49af5")
+	)
+	(pad "3" thru_hole circle
+		(at 0 6)
+		(size 2.4 2.4)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c2f6787b-e566-42ba-9d65-3a19be164389")
+	)
+	(embedded_fonts no)
+)

@@ -1,4 +1,4 @@
-24825559876373613
+24841212020663611
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -2568,6 +2568,55 @@ speaker CUI
 0
 2
 2
+Cacophony
+2P F 2.54mm
+
+
+0
+2
+2
+Cacophony
+DYSV5W
+
+
+0
+14
+5
+Cacophony
+I2C OLED
+
+
+0
+4
+4
+Cacophony
+JST-GH 2P F
+
+
+0
+4
+2
+Cacophony
+MiniBuck
+
+
+0
+4
+4
+Cacophony
+SG90
+
+
+0
+3
+3
+Cacophony
+TFT Display
+
+
+0
+7
+7
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -99793,6 +99842,20 @@ ICRS_8mm
 0
 ruler_footprints_2025
 ICRS_LinktreeQR_10mm
+
+
+0
+0
+0
+ruler_footprints_2025
+IPRL_14mm
+
+
+0
+0
+0
+ruler_footprints_2025
+IPRL_20mm
 
 
 0

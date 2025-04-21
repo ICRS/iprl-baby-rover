@@ -3907,6 +3907,12 @@
 		(uuid "e37ccc43-7bfa-4731-a398-0fa42a858ee2")
 	)
 	(junction
+		(at 30.48 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16e05983-bab1-4821-85b1-72db7f7b56a5")
+	)
+	(junction
 		(at 207.01 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3947,6 +3953,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f6ea841-c5c7-489d-8e1e-07b1a907436e")
+	)
+	(junction
+		(at 17.78 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bea5227-1bda-47ce-b3e7-08611d5fb55d")
 	)
 	(junction
 		(at 139.7 110.49)
@@ -4429,6 +4441,26 @@
 			(type default)
 		)
 		(uuid "7e659f7b-d125-478a-ac54-e73746a1d1be")
+	)
+	(wire
+		(pts
+			(xy 17.78 160.02) (xy 30.48 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "813c59bd-0874-433d-8eb0-52d2472a25b6")
+	)
+	(wire
+		(pts
+			(xy 17.78 167.64) (xy 30.48 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "833b75ec-10f1-48cd-a069-f9fd6d114617")
 	)
 	(wire
 		(pts
@@ -6209,7 +6241,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 211.1248 101.6 0)
 			(effects
 				(font
@@ -6376,6 +6408,72 @@
 			(project "CapyController"
 				(path "/9356d540-b2ec-4e7a-a3e1-4671cf217e36"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 17.78 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e484c45-5bc5-4c8a-9ed0-aad04d5b8c66")
+		(property "Reference" "#PWR065"
+			(at 17.78 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 17.78 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 17.78 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 17.78 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 17.78 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57fce1b2-6550-42dd-bfe6-a0314769ebc6")
+		)
+		(instances
+			(project "CapyController"
+				(path "/9356d540-b2ec-4e7a-a3e1-4671cf217e36"
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -6853,6 +6951,72 @@
 			(project ""
 				(path "/9356d540-b2ec-4e7a-a3e1-4671cf217e36"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 30.48 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14e664d1-e422-4657-9fe4-8f86edbe0741")
+		(property "Reference" "#PWR064"
+			(at 30.48 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bdcbddf5-bf56-416c-a111-113d5e1e30bf")
+		)
+		(instances
+			(project "CapyController"
+				(path "/9356d540-b2ec-4e7a-a3e1-4671cf217e36"
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -8372,6 +8536,76 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 17.78 163.83 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50e07faa-72ca-4ce6-8d16-1fa7a180d487")
+		(property "Reference" "C4"
+			(at 21.59 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "47uF"
+			(at 21.59 165.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 16.8148 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 17.78 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 17.78 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "425b6763-24f4-4e08-a4ea-b1830673a655")
+		)
+		(pin "1"
+			(uuid "60921ea7-1b00-4e5a-bdb7-89301168c3aa")
+		)
+		(instances
+			(project "CapyController"
+				(path "/9356d540-b2ec-4e7a-a3e1-4671cf217e36"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 144.78 26.67 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8398,7 +8632,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 143.8148 22.86 0)
 			(effects
 				(font
@@ -10137,6 +10371,76 @@
 			(project "CapyController"
 				(path "/9356d540-b2ec-4e7a-a3e1-4671cf217e36"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 30.48 163.83 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90beee7f-2fcb-4efd-9046-1ca0a07f76ed")
+		(property "Reference" "C5"
+			(at 34.29 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100nF"
+			(at 34.29 165.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 29.5148 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 30.48 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e598e507-7212-460e-8d8a-efc5593a4aba")
+		)
+		(pin "1"
+			(uuid "82fd95f3-6dd1-4d91-87d3-e6eed4bb238b")
+		)
+		(instances
+			(project "CapyController"
+				(path "/9356d540-b2ec-4e7a-a3e1-4671cf217e36"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -13558,7 +13862,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 223.8248 101.6 0)
 			(effects
 				(font

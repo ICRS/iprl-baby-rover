@@ -1,4 +1,4 @@
-24822071467885807
+24825559876373613
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -6509,6 +6509,20 @@ Mini Blade Holder
 0
 4
 4
+CapyPower_Footprints
+ScrewTerminal_P6.00mm_2P
+
+
+0
+2
+2
+CapyPower_Footprints
+ScrewTerminal_P6.00mm_3P
+
+
+0
+3
+3
 Connector
 Banana_Cliff_FCR7350B_S16N-PC_Horizontal
 Cliff single 4mm shrouded banana panel socket, through-hole, horizontal, black, https://www.cliffuk.co.uk/products/testleads/sockets/S16NPC.pdf
